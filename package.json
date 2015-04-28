@@ -1,0 +1,33 @@
+{
+  "name": "social-media-resolver",
+  "version": "0.0.0-semantically-released",
+  "description": "social media url resolver",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^5.1.13"
+  },
+  "devDependencies": {
+    "semantic-release": "^3.2.0",
+    "standard": "^3.7.2"
+  },
+  "scripts": {
+    "test": "standard",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophwitzko/social-media-resolver.git"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "resolver"
+  ],
+  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christophwitzko/social-media-resolver/issues"
+  },
+  "homepage": "https://github.com/christophwitzko/social-media-resolver#readme"
+}
