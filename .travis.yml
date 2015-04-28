@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- iojs-v1
+sudo: false
+env:
+  global:
+    secure: YV28vkczMW/5A2HpRS9o9PeZDEZ++qGTxR2qiyrtQkPgQt2lrNLfc3eYwjG9d3golpKov/pZm1GPKLXnvCg0UOCdJo6fDcCbHhxOhI/zWz0xgX1AY94g6CcSx6HoWRZxA+umdeIo3icthp2a9gZayHJkg8Q/9/6b+W8MsOkcqmM=
+cache:
+  directories:
+  - node_modules
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: npm@christophwitzko.com
+  skip_cleanup: true
+  api_key:
+    secure: GEpn36OjxOcDEBEB7Muj0PLSmZdAmQbD10INwOmEN7dCoT48cPQ6MrSRmq8p7hMhbe1WTYM0gtF4u9oLjXDeMc3Fi8QuxO3a0xxEV5htbudem9EyVpvms+pVN2/6PLBscpc3+xYvmhML1SnHdKjFTI1Kksd4fSxoT9H6JBCdOJA=
+  on:
+    branch: master
+    repo: christophwitzko/social-media-resolver
