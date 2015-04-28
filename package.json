@@ -4,7 +4,9 @@
   "description": "social media url resolver",
   "main": "index.js",
   "dependencies": {
-    "babel": "^5.1.13"
+    "babel": "^5.1.13",
+    "request": "^2.55.0",
+    "url-join": "0.0.1"
   },
   "devDependencies": {
     "semantic-release": "^3.2.0",
