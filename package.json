@@ -4,16 +4,18 @@
   "description": "social media url resolver",
   "main": "index.js",
   "dependencies": {
-    "babel": "^5.1.13",
     "request": "^2.55.0",
     "url-join": "0.0.1"
   },
   "devDependencies": {
+    "babel": "^5.1.13",
     "semantic-release": "^3.2.0",
     "standard": "^3.7.2"
   },
   "scripts": {
+    "build": "babel lib/index.js -o index.js",
     "test": "standard",
+    "posttest": "npm run build",
     "prepublish": "semantic-release pre",
     "postpublish": "semantic-release post"
   },
@@ -31,5 +33,10 @@
   "bugs": {
     "url": "https://github.com/christophwitzko/social-media-resolver/issues"
   },
-  "homepage": "https://github.com/christophwitzko/social-media-resolver#readme"
+  "homepage": "https://github.com/christophwitzko/social-media-resolver#readme",
+  "standard": {
+    "ignore": [
+      "index.js"
+    ]
+  }
 }
